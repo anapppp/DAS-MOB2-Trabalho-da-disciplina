@@ -6,28 +6,29 @@
     android:id="@+id/layoutSpecificCharacter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="32dp"
     tools:context=".ui.CharactersDetails.CharacterDetailsActivity">
 
     <!-- Título da Activity -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="Buscar Personagem por ID"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="32dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- EditText para inserir o ID -->
     <EditText
         android:id="@+id/etCharacterId"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/black"
         android:hint="Digite o ID do personagem"
         android:inputType="number"

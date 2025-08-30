@@ -6,7 +6,7 @@
     android:id="@+id/layoutListTeachers"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="32dp"
     tools:context=".ui.HogwartsStaff.HogwartsStaffActivity">
 
     <!-- Título da Activity -->
@@ -14,20 +14,21 @@
         android:id="@+id/tvTitleTeachers"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="Professores da Escola"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Botão de atualizar/refresh -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRefreshTeachers"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Atualizar"
         android:textColor="@android:color/white"
         app:backgroundTint="@color/black"
