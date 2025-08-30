@@ -15,5 +15,4 @@ interface CharApi {
 
     @GET("characters/house/{house}")
     suspend fun getCharactersByHouse(@Path("house") house: String): List<Char>
-
 }
