@@ -14,11 +14,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HarryPotterApp">
         <activity
+            android:name=".ui.HogwartsStaff.HogwartsStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CharactersInAHouse.CharactersInAHouseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CharactersDetails.CharacterDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.Main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
