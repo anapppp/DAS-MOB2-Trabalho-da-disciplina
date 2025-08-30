@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutListTeachers"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".ui.HogwartsStaff.HogwartsStaffActivity">
+
+    <!-- Título da Activity -->
+    <TextView
+        android:id="@+id/tvTitleTeachers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Professores da Escola"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botão de atualizar/refresh -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRefreshTeachers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Atualizar"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleTeachers" />
+
+    <!-- TextView para exibir a lista de professores -->
+    <TextView
+        android:id="@+id/tvTeachersList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Os professores aparecerão aqui"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btnRefreshTeachers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
