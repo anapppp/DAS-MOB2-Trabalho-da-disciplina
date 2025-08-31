@@ -41,7 +41,7 @@ CharacterDetailsActivity : AppCompatActivity() {
         viewModel = CharacterDetailsViewModel(repository)
 
         btnSearchChar.setOnClickListener {
-            val characterId: String = "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8"//etCharacterId.text.toString()
+            val characterId: String = etCharacterId.text.toString()
             fetchCharacterDetails(characterId)
         }
     }
