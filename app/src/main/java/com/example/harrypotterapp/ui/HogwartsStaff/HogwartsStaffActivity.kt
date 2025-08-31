@@ -13,6 +13,8 @@ import androidx.lifecycle.lifecycleScope
 import com.example.harrypotterapp.R
 import com.example.harrypotterapp.data.model.Character
 import com.example.harrypotterapp.data.repository.CharRepository
+import com.example.harrypotterapp.ui.hideLoading
+import com.example.harrypotterapp.ui.showLoading
 import kotlinx.coroutines.launch
 
 
@@ -46,7 +48,7 @@ class HogwartsStaffActivity : AppCompatActivity() {
     private fun fetchStaffList() {
         lifecycleScope.launch {
             try {
-                showLoading()
+                showLoading(progressBar, tvStaffList)
                 val staff: List<Character>? = viewModel.getHogwartsStaff()
                 val names = staff?.joinToString(separator = "\n") { it.name ?: "" }
 
@@ -61,18 +63,8 @@ class HogwartsStaffActivity : AppCompatActivity() {
                 ).show()
                 Log.e("HogwartsStaffActivity", "Erro ao buscar professores", e)
             } finally {
-                hideLoading()
+                hideLoading(progressBar, tvStaffList)
             }
         }
-    }
-
-    private fun showLoading() {
-        progressBar.visibility = View.VISIBLE
-        tvStaffList.visibility = View.GONE
-    }
-
-    private fun hideLoading() {
-        progressBar.visibility = View.GONE
-        tvStaffList.visibility = View.VISIBLE
     }
 }
