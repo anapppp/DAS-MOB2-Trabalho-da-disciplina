@@ -3,7 +3,7 @@ package com.example.harrypotterapp.data.network
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RetrofitInstance {
+object Retrofit {
     val api: CharApi by lazy {
         Retrofit.Builder()
             .baseUrl("https://hp-api.onrender.com/api/")

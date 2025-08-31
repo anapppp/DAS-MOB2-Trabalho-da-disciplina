@@ -9,7 +9,6 @@
     android:padding="32dp"
     tools:context=".ui.CharactersInAHouse.CharactersInAHouseActivity">
 
-    <!-- Título da Activity -->
     <TextView
         android:id="@+id/tvTitleStudents"
         android:layout_width="0dp"
@@ -23,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- RadioGroup com casas -->
     <RadioGroup
         android:id="@+id/rgHouses"
         android:layout_width="0dp"
@@ -59,7 +57,6 @@
             android:text="Ravenclaw" />
     </RadioGroup>
 
-    <!-- Botão Buscar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSearchHouse"
         android:layout_width="0dp"
@@ -72,9 +69,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rgHouses" />
 
-    <!-- TextView para exibir estudantes -->
     <TextView
-        android:id="@+id/tvStudentsList"
+        android:id="@+id/tvCharList"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Os estudantes aparecerão aqui"

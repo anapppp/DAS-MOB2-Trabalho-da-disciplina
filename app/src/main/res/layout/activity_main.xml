@@ -8,8 +8,6 @@
     android:padding="32dp"
     tools:context=".ui.Main.MainActivity">
 
-    <!-- Título -->
-
     <TextView
         android:id="@+id/tvDashboardTitle"
         android:layout_width="0dp"
@@ -23,8 +21,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Botão: Listar personagem por ID -->
 
     <View
         android:id="@+id/divider"
@@ -46,7 +42,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
-    <!-- Botão: Listar professores -->
     <Button
         android:id="@+id/buttonStaff"
         android:layout_width="0dp"
@@ -70,13 +65,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonStaff" />
 
-    <!-- Botão: Sair -->
     <Button
         android:id="@+id/buttonExit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:backgroundTint="@color/cardview_dark_background"
+        android:backgroundTint="@android:color/darker_gray"
         android:text="Sair"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

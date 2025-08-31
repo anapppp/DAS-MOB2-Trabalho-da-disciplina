@@ -1,18 +1,17 @@
 package com.example.harrypotterapp.data.network
 
+import com.example.harrypotterapp.data.model.Character
 import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface CharApi {
-    @GET("characters")
-    suspend fun getCharacters(): List<Char>
 
     @GET("characters/{id}")
-    suspend fun getCharacterById(@Path("id") id: String): Char
+    suspend fun getCharacterById(@Path("id") id: String): Character
 
     @GET("characters/staff")
-    suspend fun getStaff(): List<Char>
+    suspend fun getStaff(): List<Character>
 
     @GET("characters/house/{house}")
-    suspend fun getCharactersByHouse(@Path("house") house: String): List<Char>
+    suspend fun getCharactersByHouse(@Path("house") house: String): List<Character>
 }
