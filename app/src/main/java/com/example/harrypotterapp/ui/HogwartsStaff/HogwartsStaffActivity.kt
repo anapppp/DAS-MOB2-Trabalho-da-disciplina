@@ -20,11 +20,11 @@ import kotlinx.coroutines.launch
 
 class HogwartsStaffActivity : AppCompatActivity() {
 
-    lateinit var buttonRefreshStaff: Button
-    lateinit var tvStaffList: TextView
-    lateinit var progressBar: ProgressBar
-    lateinit var viewModel: HogwartsStaffViewModel
-    lateinit var repository: CharRepository
+    private lateinit var buttonRefreshStaff: Button
+    private lateinit var tvStaffList: TextView
+    private lateinit var progressBar: ProgressBar
+    private lateinit var viewModel: HogwartsStaffViewModel
+    private lateinit var repository: CharRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

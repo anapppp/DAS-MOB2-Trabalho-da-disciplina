@@ -6,15 +6,15 @@ import com.example.harrypotterapp.data.network.Retrofit
 class CharRepository {
     private val api = Retrofit.api
 
-    suspend fun getCharacterById(id: String): Character {
-        return api.getCharacterById(id)
+    suspend fun getCharacterById(id: String): Character? {
+        return api.getCharacterById(id).firstOrNull()
     }
 
-    suspend fun getStaff(): List<Character> {
+    suspend fun getStaff(): List<Character>? {
         return api.getStaff()
     }
 
-    suspend fun getCharactersByHouse(house: String): List<Character> {
+    suspend fun getCharactersByHouse(house: String): List<Character>? {
         return api.getCharactersByHouse(house)
     }
 }

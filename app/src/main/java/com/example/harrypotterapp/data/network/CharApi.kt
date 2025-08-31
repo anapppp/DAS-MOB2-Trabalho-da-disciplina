@@ -6,8 +6,8 @@ import retrofit2.http.Path
 
 interface CharApi {
 
-    @GET("characters/{id}")
-    suspend fun getCharacterById(@Path("id") id: String): Character
+    @GET("character/{id}")
+    suspend fun getCharacterById(@Path("id") id: String): List<Character>
 
     @GET("characters/staff")
     suspend fun getStaff(): List<Character>
